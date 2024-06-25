@@ -1,0 +1,13 @@
+# if not already configured
+git config --global user.email "your mail"
+git config --global user.name "your name"
+
+# first time setup
+git init
+git status
+git add .
+git commit -m "first commit"
+git remote -v
+git remote add origin created-repo-link
+git remote -v
+git push origin master
