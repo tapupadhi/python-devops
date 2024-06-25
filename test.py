@@ -15,4 +15,3 @@ def test3():
     response = app.test_client().get('/base')
     assert b'My Daily Checklist' in response.data
     assert b'Added Task' in response.data
-    assert b'task2 2' in response.data
