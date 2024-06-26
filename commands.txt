@@ -16,3 +16,5 @@ git push origin master
 ### heroku
 heroku login
 heroku git:remote -a app-name-created-in-heroku
+git commit -am "your message"
+git push heroku master
