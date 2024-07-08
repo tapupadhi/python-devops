@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myfirstpod
+  labels:
+    app: flask
+
+spec:
+  containers:
+    - name: myfirstpod
+      image: rashmiranjanpadhi19/devops-with-python

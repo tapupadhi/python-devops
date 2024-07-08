@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myfirstdeployment
+  labels:
+    app: flask
+
+spec:
+  template:
+    metadata:
+      name: myfirstpod
+      labels:
+        app: flask
+    spec:
+      containers:
+        - name: myfirstpod
+          image: rashmiranjanpadhi19/devops-with-python
+  replicas: 4
+  selector:
+    matchLabels:
+      app: flask
